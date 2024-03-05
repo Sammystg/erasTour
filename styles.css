@@ -1,3 +1,42 @@
-h1 {
-    color: red;
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cardContainer section {
+    flex: 1 0 20%;
+    min-width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: opacity 0.5s;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cardContainer section:nth-child(n + 6) {
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+.caedContainer .debut, .cardContainer .fearless, .cardContainer .speakNow, .cardContainer .red, .cardContainer .blue, .cardContainer .rep, .cardContainer .lover, .cardContainer .folklore, .cardContainer .evermore, .cardContainer .midnights {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: auto;
+}
+
+@media (min-height: 100vh) {
+    .cardContainer {
+        overflow-y: scroll;
+    }
 }
